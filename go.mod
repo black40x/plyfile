@@ -1,3 +1,3 @@
-module github.com/black40x/go-ply-reader
+module plyfile
 
 go 1.19

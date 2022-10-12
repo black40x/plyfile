@@ -365,7 +365,7 @@ type Point struct {
 
 func (p Point) String() string {
 	return fmt.Sprintf(
-		"{x: %.16f, y: %.16f, z: %.16f, r: %d, g: %d, b: %d}",
+		"{ x: %.16f, y: %.16f, z: %.16f, r: %d, g: %d, b: %d }",
 		p.X, p.Y, p.Z, p.R, p.G, p.B,
 	)
 }

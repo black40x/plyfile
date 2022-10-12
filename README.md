@@ -35,15 +35,15 @@ Read all points
 
 ```go
 func main() {
-	ply, err := plyfile.Open("./reconstruction_dense.ply")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer ply.Close()
+    ply, err := plyfile.Open("./reconstruction_dense.ply")
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer ply.Close()
 
-	r, err := ply.GetElementReader("vertex")
-	if err == nil {
-		point := plyfile.Point{}
+    r, err := ply.GetElementReader("vertex")
+    if err == nil {
+        point := plyfile.Point{}
 
         for {
             _, err := r.ReadNext(&point)
@@ -66,15 +66,15 @@ type MyPoint struct {
 }
 
 func main() {
-	ply, err := plyfile.Open("./reconstruction_dense.ply")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer ply.Close()
+    ply, err := plyfile.Open("./reconstruction_dense.ply")
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer ply.Close()
 
-	r, err := ply.GetElementReader("vertex")
-	if err == nil {
-		point := MyPoint{}
+    r, err := ply.GetElementReader("vertex")
+    if err == nil {
+        point := MyPoint{}
 
         for {
             _, err := r.ReadNext(&point)

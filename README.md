@@ -5,7 +5,7 @@ Golang simple PLY (binary_little_endian only) file reader.
 ## Install
 
 ```
-go get github.com/black40x/go-ply-reader
+go get github.com/black40x/plyfile
 ```
 
 ## Example
